@@ -4,8 +4,14 @@ body {
 	color: #333333;
 }
 
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 #container {
-	width: 1000px;
+	width: 800px;
 	margin: 0 auto;
 }
 
@@ -15,13 +21,7 @@ body {
     border-bottom: dashed 1px #ccc;
 }
 
-#container ul, li {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-#container h5 {
+.bookmark h5 {
 	text-transform: uppercase;
 	font-size: 24px;
 	font-weight: normal;
@@ -33,11 +33,25 @@ body {
     text-overflow: ellipsis; 
 }
 
-#container .date {
+.bookmark .date {
 	position: absolute;
 	bottom: 4px;
 	right: 0;
 	color: #999999;
 	font-style: italic;
 	text-align: right;
+}
+
+.search {
+    background: #F9F9F9;
+    padding: 20px 20px;
+}
+
+.search input {
+    width: 100%;
+    height: 36px;
+    font-size: 16px;
+    border: 1px solid #999;
+    padding: 4px 8px;
+    box-sizing: border-box;
 }

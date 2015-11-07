@@ -1,6 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var BookmarkList = require('./components/bookmark-list.js');
+var BookmarkApp = require('./components/bookmark-app.js');
 
-ReactDOM.render(React.createElement(BookmarkList), 
+ReactDOM.render(React.createElement(BookmarkApp), 
 	document.getElementById('container'));

@@ -11,7 +11,14 @@ var BookmarkStore = Reflux.createStore({
 
 	onFetch: function() {
 		var self = this;
-		$.get('/data/bookmarks.json').done(function(bookmarks) {
+		$.get('/bookmarks').done(function(bookmarks) {
+			self.trigger(bookmarks);
+		});
+	},
+
+	onSearch: function(keyword) {
+		var self = this;
+		$.get('/bookmarks?keyword='+keyword).done(function(bookmarks) {
 			self.trigger(bookmarks);
 		});
 	}

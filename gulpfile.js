@@ -17,7 +17,7 @@ gulp.task('browserify', ['convert'], function(){
 
   return b.bundle()
     .pipe(source('main.js'))
-    .pipe(gulp.dest('build/'));
+    .pipe(gulp.dest('public/build/'));
 });
 
 gulp.task('default', function() {

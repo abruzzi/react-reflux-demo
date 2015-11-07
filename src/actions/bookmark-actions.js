@@ -1,6 +1,7 @@
 var Reflux = require('reflux');
 var BookmarkActions = Reflux.createActions([
-	'fetch'
+	'fetch',
+	'search'
 ]);
 
 module.exports = BookmarkActions;
