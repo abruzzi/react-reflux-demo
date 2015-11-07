@@ -29,13 +29,12 @@ var Bookmark = React.createClass({
 		        dangerouslySetInnerHTML={{
 		          __html : this.props.title.replace(new RegExp('('+this.state.match+')', "gi"), '<span class="highlight">$1</span>')
 		        }} />
-			// this.props.title.replace(new RegExp('('+this.state.match+')', "gi"), '<span className="highlight">$1</span>')
 		}
 
 		return <li>
 			<div className='bookmark'>
 				<h5 className='title'>{title}</h5>
-				<span className='date'>Created at: {date}</span>
+				<span className='date'>Created @ {date}</span>
 			</div>
 		</li>;
 	}

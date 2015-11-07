@@ -1,7 +1,8 @@
 body {
-	font-family: "Open Spans", sans-serif;
+	font-family: 'Lantinghei SC', Helvetica, Arial, 'Hiragino Sans GB', STHeiti, 'WenQuanYi Micro Hei', sans-serif;
 	font-size: 16px;
-	color: #333333;
+	color: #505050;
+    -webkit-font-smoothing: antialiased;
 }
 
 ul, li {
@@ -17,13 +18,12 @@ ul, li {
 
 .bookmark {
 	position: relative;
-	padding: 20px 0;
+	padding: 24px 0;
     border-bottom: dashed 1px #ccc;
 }
 
 .bookmark h5 {
-	text-transform: uppercase;
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: normal;
 	margin: 0;
 
@@ -37,9 +37,10 @@ ul, li {
 	position: absolute;
 	bottom: 4px;
 	right: 0;
-	color: #999999;
+	color: #d3d3d3;
 	font-style: italic;
 	text-align: right;
+	font-size: 14px;
 }
 
 .search {
@@ -51,11 +52,12 @@ ul, li {
     width: 100%;
     height: 36px;
     font-size: 16px;
-    border: 1px solid #999;
+    border: 1px solid #ccc;
     padding: 4px 8px;
     box-sizing: border-box;
 }
 
 .highlight {
-	background-color: lightgreen;
+	background-color: #F24A98;
+	color: white;
 }
