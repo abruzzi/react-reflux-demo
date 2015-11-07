@@ -1,0 +1,43 @@
+body {
+	font-family: "Open Spans", sans-serif;
+	font-size: 16px;
+	color: #333333;
+}
+
+#container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.bookmark {
+	position: relative;
+	padding: 20px 0;
+    border-bottom: dashed 1px #ccc;
+}
+
+#container ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#container h5 {
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: normal;
+	margin: 0;
+
+	white-space: nowrap; 
+    width: 80%; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+#container .date {
+	position: absolute;
+	bottom: 4px;
+	right: 0;
+	color: #999999;
+	font-style: italic;
+	text-align: right;
+}
