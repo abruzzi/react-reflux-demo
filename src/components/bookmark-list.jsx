@@ -16,7 +16,7 @@ var BookmarkList = React.createClass({
 	render: function() {
 		var list = [];
 		this.state.bookmarks.forEach(function(item) {
-	      list.push(<Bookmark title={item.title} />)
+	      list.push(<Bookmark title={item.title} created={item.created}/>)
 	    });
 	    
 		return <ul>
