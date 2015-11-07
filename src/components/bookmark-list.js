@@ -9,13 +9,13 @@ var BookmarkList = React.createClass({displayName: "BookmarkList",
 
 	getInitialState: function() {
 		return {
-			bookmarks: []
+			bookmarks: {data: []}
 		}
 	},
 
 	render: function() {
 		var list = [];
-		this.state.bookmarks.forEach(function(item) {
+		this.state.bookmarks.data.forEach(function(item) {
 	      list.push(React.createElement(Bookmark, {title: item.title, created: item.created}))
 	    });
 	    
