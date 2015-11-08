@@ -2,6 +2,8 @@ var $ = require('jquery');
 var Reflux = require('reflux');
 var BookmarkActions = require('../actions/bookmark-actions');
 
+var Utils = require('../utils/fetch-client');
+
 var BookmarkStore = Reflux.createStore({
 	listenables: [BookmarkActions],
 
@@ -11,7 +13,7 @@ var BookmarkStore = Reflux.createStore({
 
 	onFetch: function() {
 		var self = this;
-		$.get('/bookmarks').done(function(bookmarks) {
+		Utils.fetch('/bookmarks').then(function(bookmarks) {
 			self.trigger({
 				data: bookmarks,
 				match: ''
@@ -22,7 +24,7 @@ var BookmarkStore = Reflux.createStore({
 	onSearch: function(keyword) {
 		var self = this;
 
-		$.get('/bookmarks?keyword='+keyword).done(function(bookmarks) {
+		Utils.fetch('/bookmarks?keyword='+keyword).then(function(bookmarks) {
 			self.trigger({
 				data: bookmarks,
 				match: keyword
