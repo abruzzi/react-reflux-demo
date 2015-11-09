@@ -13,7 +13,8 @@ To run it, simply:
 $ git clone git@github.com:abruzzi/react-reflux-demo.git
 $ npm install
 $ gulp
-$ python -m SimpleHTTPServer 8899
+$ bundle install
+$ ruby app.rb
 ```
 
 and then launch the browser to view the `bookmark` list.
