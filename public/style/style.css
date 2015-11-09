@@ -44,7 +44,15 @@ ul, li {
 }
 
 .search {
-    background: #F9F9F9;
+	background: repeating-linear-gradient(
+	  -45deg,
+	  #F9F9F9,
+	  #F9F9F9 5px,
+	  #FFFFFF 5px,
+	  #FFFFFF 10px
+	);
+
+    /*background: #F9F9F9;*/
     padding: 20px 20px;
 }
 
